@@ -8,7 +8,7 @@ spring:
      url: mongodb://localhost/test
      port: 27017
      database: test
- eureka:
+eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -16,4 +16,5 @@ spring:
       defaultZone: http://localhost:1234/eureka
   instance:
      hostname: localhost
+
      
