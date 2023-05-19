@@ -1,0 +1,13 @@
+server:
+  port: 7878
+spring:
+  application:
+    name: Customer
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1234/eureka
+  instance:
+    hostname: localhost
