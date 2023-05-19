@@ -1,20 +1,8 @@
-server:
-  port: 8989
-spring:
-  application:
-    name: restaurant
+
   data:
    mongo:
-     url: mongodb://localhost/test
+     url: mongodb://localhost/sweegy
      port: 27017
-     database: test
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:1234/eureka
-  instance:
-     hostname: localhost
+    
 
      
