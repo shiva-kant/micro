@@ -1,4 +1,28 @@
+server:
+  port: 6565
+spring:
+  application:
+    name: Restaurant
 
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1234/eureka/
+  instance:
+    hostname: localhost
+
+resilience4j:
+  retry:
+    instances:
+       fall:
+          max-attempts: 1
+  timelimiter:
+    instances:
+      hello:
+       timeout-duration: 1s
+       cancel-running-future: false
   data:
    mongo:
      url: mongodb://localhost/sweegy
