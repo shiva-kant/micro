@@ -5,7 +5,7 @@ spring:
   application:
     name: restaurant
   datasource:
-    url: jdbc:mysql://localhost:3306/sweegy
+    url: jdbc:mysql://localhost:3306/zomato
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
