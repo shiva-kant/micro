@@ -1,0 +1,24 @@
+---
+server:
+  port: 5678
+spring:
+  application:
+    name: myfirstservice
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sweegy
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1234/eureka/
+  instance:
+    hostname: localhost
